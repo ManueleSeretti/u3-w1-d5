@@ -24,8 +24,8 @@ class FilmsList extends Component {
         <Row className="bg-black g-2 gy-2">
           <h4 className="text-start text-light mt-4">{this.props.title}</h4>
           {!this.state.respons && <Spinner variant="success" animation="border" role="status"></Spinner>}
-          {this.state.films.map((film) => (
-            <Col className="col-xs-6 col-md-4 col-lg-2 card-film">
+          {this.state.films.map((film, index) => (
+            <Col key={index} className="col-xs-6 col-md-4 col-lg-2 card-film">
               <Card className="bg-black">
                 <Card.Img style={{ height: "250px", objectFit: "contain" }} variant="fluid" src={film.Poster} />
               </Card>
