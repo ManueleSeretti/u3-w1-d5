@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { Button, Col, Container, Dropdown, DropdownButton, Row } from "react-bootstrap";
 import ImgProfile from "../asset/avatar.png";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
 class MainProfile extends Component {
   render() {
@@ -15,16 +14,16 @@ class MainProfile extends Component {
                 <hr />
               </Col>
               <Col className="col-4 col-lg-3 mt-0">
-                <div class="position-relative">
+                <div className="position-relative">
                   <img src={ImgProfile} style={{ width: "160px", objectFit: "contain" }} alt="immagine profilo" />
-                  <div class="position-absolute position-icon">
-                    <i class="bi bi-pencil text-light dg-dark"></i>
+                  <div className="position-absolute position-icon">
+                    <i className="bi bi-pencil text-light dg-dark"></i>
                   </div>
                 </div>
               </Col>
               <Col className="col-12 col-md-8 col-lg-9  px-md-4 text-white mt-md-0">
                 <h2 className="bg-secondary text-white mt-0 ">Strive Student</h2>
-                <p class="mt-4 text-white fs-4 mb-2">Language:</p>
+                <p className="mt-4 text-white fs-4 mb-2">Language:</p>
                 <DropdownButton
                   variant="white-outline"
                   size="sm"
@@ -42,13 +41,13 @@ class MainProfile extends Component {
                 <hr />
               </Col>
               <Col className="col-12 col-md-8 offset-md-4 col-lg-9 offset-lg-3 px-md-4 text-white mt-0">
-                <p class="mt-2">Maturity Settings:</p>
+                <p className="mt-2">Maturity Settings:</p>
                 <Button variant="dark" className="text-white px-3 py-1 ">
                   All Maturity Ratings
                 </Button>
 
                 <br />
-                <span class="mt-4">Show titles of all maturity ratings for this profile.</span>
+                <span className="mt-4">Show titles of all maturity ratings for this profile.</span>
                 <br />
                 <Button variant="secondary-outline" className="text-secondary border-secondary  mt-4 px-4 py-1 ">
                   EDIT
